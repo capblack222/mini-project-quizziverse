@@ -13,7 +13,7 @@ var app = express();
 var server = http.createServer(app);
 var io = socketIO(server);
 var games = new LiveGames();
-var players = new Players();
+const players = new Players();
 
 //Mongodb setup
 var MongoClient = require('mongodb').MongoClient;
